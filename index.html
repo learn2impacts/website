@@ -1,48 +1,122 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <link rel="stylesheet" href="mystyle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn2Impact Academy</title>
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <!-- Owl Carousel JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<header>
-  <title>Learn2Impacts</title>
-</header>
-
 <body>
-  <h1 class="text-center">Lear2Impacts Academy</h1>
-  <section class="padding20px">
-    <h2 class="text-center">About Us</h2>
-    <p>We are excited to introduce you with Learn2Impact Academy, passionate about providing
-      software training and
-      placement service to the fresh technical graduates to make big impact in the industry.
-    </p>
-
-    <p>
-      We have a team of experienced working professionals who are dedicated to providing our students with the best
-      possible online training. We are always looking for new ways to improve our services. We are confident that we can
-      help you to achieve your goals.
-    </p>
-    <p>
-      Learning2Impact is a well known name to the technical colleges and the software companies of West Bengal. Our
-      training is making impact in the industry both for freshers and experienced professionals to acquire new skills.
-      We are providing personal and industrial training. Individuals, Colleges and companies can contact us to arrange
-      online industrial training for their students / employees.
-    </p>
-
-    <div>
-      <div>Here are some points which makes us unique in the crowd</div>
-      <div>
-        <ul>
-          <li>Up-to-date training by experienced working professionals</li>
-          <li>Hands-on-experience to help you to develop industrial projects</li>
-          <li>Career support for interview specific preparations, resume writing help etc.</li>
-          <li>Individual doubt clearance session post 15 days of training completion</li>
-        </ul>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="Logo">
+        Learn2Impact Academy
+      </a>
+      <div class="navbar-menu">
+        <a href="#courses">Courses</a>
+        <a href="#about">About Us</a>
+        <a href="#career">Career & Placement Support</a>
+        <a href="#contact">Contact</a>
+        <a href="#gallery">Gallery</a>
       </div>
-    </div>
+    </nav>
+  </header>
 
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h2>Learn2Impact Academy</h2>
+      <p>Passionate about providing software training and career services to make a big impact in the industry.</p>
+      <a href="#courses" class="cta-btn">Explore Courses</a>
+    </div>
   </section>
 
+  <!-- Courses Section -->
+  <section id="courses">
+    <h2>Our Courses</h2>
+    <div class="course-grid">
+      <!-- Add your course cards dynamically using JavaScript -->
+    </div>
+    <div id="show-more-container">
+      <button id="show-more-btn">Show More</button>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <div class="about-content">
+      <div class="about-content-text">
+        <h2>About Us</h2>
+        <p>Learning2Impact provide up-to-date software training by experienced working professionals.
+          Our hands-on experience helps you develop industrial projects.We are confident that we can help you to achieve your goals.
+          Our training is making impact in the industry both for freshers and experienced professionals to acquire new skills.
+        </p>
+      </div>
+      <img src="images/about-image.png" alt="About Us Image">
+    </div>
+  </section>
+
+  <!-- Career & Placement Support Section -->
+  <section id="career">
+    <div class="career-content">
+      <!-- <img src="images/career-image.png" alt="Career & Placement Support Image"> -->
+      <div class="career-content-text">
+        <h2>Career Support</h2>
+        <p>Our career support services ensure you are well-prepared for job interviews. We provide
+          interview-specific preparations, resume writing help, and offer individual doubt clearance sessions after 15
+          days of training completion.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-content">
+      <h2>Contact Us</h2>
+      <p>We are providing personal and industrial training. Individuals, colleges, and companies can contact us to arrange online industrial training for their students/employees.</p>
+      <p>For any inquiries, you can reach us through:</p>
+      <ul>
+        <li>WhatsApp: <a href="tel:+91 8388910166">+91 8388910166</a></li>
+        <li>Facebook: <a href="https://www.facebook.com/profile.php?id=100093609093749">Learn2Impact (FB)</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="owl-carousel">
+      <div class="gallery-item">
+        <img src="images/gallery/courses.png" alt="Course 1">
+        <h3>Courses</h3>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery/class-rules.png" alt="Course 2">
+        <h3>Class rules</h3>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery/career-image.png" alt="Course 2">
+        <h3>Our services</h3>
+      </div>
+      <!-- Add more carousel items here -->
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Learn2Impacts Academy. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

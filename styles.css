@@ -1,0 +1,310 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Global Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+/* ... */
+
+/* Header Styles */
+header {
+  background-color: #f4f4f4;
+  padding: 20px;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 50px; /* Adjust the height as needed */
+  margin-right: 10px;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  font-size: 16px;
+  transition: opacity 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Hero Section Styles */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.cta-btn {
+  background-color: #fff;
+  color: #007bff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #e6e6e6;
+}
+
+/* Courses Section Styles */
+#courses {
+  padding: 40px 0;
+}
+
+#courses h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.course {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.course:hover {
+  background-color: #e0e0e0;
+}
+
+.course h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.course p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+#show-more-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#show-more-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#show-more-btn:hover {
+  background-color: #0056b3;
+}
+
+/* About Us Section Styles */
+
+#about {
+  padding: 40px 0;
+  background-color: #f4f4f4;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.about-content img {
+  width: 350px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-content-text {
+  max-width: 500px;
+}
+
+.about-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Career & Placement Support Section Styles */
+#career {
+  padding: 40px 0;
+}
+
+.career-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.career-content img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.career-content-text {
+  max-width: 500px;
+}
+
+.career-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.career-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 20px;
+}
+/* contact us Styles */
+
+/* ... */
+
+/* Contact Section */
+#contact {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  margin-bottom: 10px;
+}
+
+#contact ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+#contact li {
+  margin-bottom: 5px;
+}
+
+#contact a {
+  color: #333;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: #666;
+}
+
+
+/* Gallery Section Styles */
+#gallery {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.gallery-img {
+  display: inline-block;
+  margin: 10px;
+}
+
+.gallery-img img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+/* ... */
