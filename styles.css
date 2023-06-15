@@ -208,7 +208,7 @@ header {
   margin-bottom: 20px;
 }
 
-/* Career & Placement Support Section Styles */
+/* Career Support Section Styles */
 #career {
   padding: 40px 0;
 }
@@ -305,6 +305,27 @@ footer {
   text-align: center;
   color: #666;
   font-size: 14px;
+}
+
+/* Media query */
+
+/* ... */
+
+@media (max-width: 768px) {
+  /* Mobile styles */
+
+  #about .about-content,
+  #career .career-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #about .about-content-text,
+  #career .career-content-text {
+    margin-bottom: 20px;
+  }
 }
 
 /* ... */
