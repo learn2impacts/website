@@ -2,12 +2,30 @@
 <html lang="en">
 
 <head>
+  <!-- Meta Tags for SEO -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Learn2Impact Academy</title>
-  <!-- Owl Carousel CSS -->
+  <meta name="description"
+    content="Learn2Impact Academy - Providing software training and career services to fresh technical graduates.">
+  <meta name="keywords" content="software training, career, placement service, technical graduates, courses, Learn2Impact Academy">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Learn2Impact Academy">
+  <meta property="og:description"
+    content="Providing software training and career services to fresh technical graduates.">
+  <meta property="og:image" content="https://www.learn2impact.com/images/logo.png">
+  <meta property="og:url" content="https://www.learn2impact.com">
+
+  <!-- Other necessary meta tags -->
+  <title>Learn2Impact Academy - Software Training and Career service</title>
+  <link rel="canonical" href="www.learn2impact.com">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <!-- Owl Carousel JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <link rel="stylesheet" href="styles.css">
@@ -18,8 +36,7 @@
   <header>
     <nav class="navbar">
       <a href="#" class="logo">
-        <img src="images/logo.png" alt="Logo">
-        Learn2Impact Academy
+        <img src="images/l2i.png" alt="Logo">
       </a>
       <div class="navbar-menu">
         <a href="#courses">Courses</a>
@@ -50,6 +67,23 @@
       <button id="show-more-btn">Show More</button>
     </div>
   </section>
+  <!-- Opening Discount Section -->
+  <section id="opening-discount">
+    <div class="discount-content">
+      <h2>Limited Time Offer!</h2>
+      <p>Get 15% Off on All Courses</p>
+      <a href="#contact" class="cta-btn">Contact Now</a>
+    </div>
+  </section>
+
+  <!-- Referral Program Section -->
+  <section id="referral-program">
+    <div class="referral-content">
+      <h2>Refer and Earn</h2>
+      <p>Refer a friend or colleague and get additional discounts on your course fees.</p>
+      <a href="#contact" class="cta-btn">Contact Now</a>
+    </div>
+  </section>
 
   <!-- About Us Section -->
   <section id="about">
@@ -57,8 +91,10 @@
       <div class="about-content-text">
         <h2>About Us</h2>
         <p>Learning2Impact provide up-to-date software training by experienced working professionals.
-          Our hands-on experience helps you develop industrial projects.We are confident that we can help you to achieve your goals.
-          Our training is making impact in the industry both for freshers and experienced professionals to acquire new skills.
+          Our hands-on experience helps you develop industrial projects.We are confident that we can help you to achieve
+          your goals.
+          Our training is making impact in the industry both for freshers and experienced professionals to acquire new
+          skills.
         </p>
       </div>
       <img src="images/about-image.png" alt="About Us Image">
@@ -81,11 +117,14 @@
   <section id="contact">
     <div class="contact-content">
       <h2>Contact Us</h2>
-      <p>We are providing personal and industrial training. Individuals, colleges, and companies can contact us to arrange online industrial training for their students/employees.</p>
+      <p>We are providing personal and industrial training. Individuals, colleges, and companies can contact us to
+        arrange online industrial training for their students/employees.</p>
       <p>For any inquiries, you can reach us through:</p>
       <ul>
-        <li>WhatsApp: <a href="tel:+91 8388910166">+91 8388910166</a></li>
-        <li>Facebook: <a href="https://www.facebook.com/profile.php?id=100093609093749">Learn2Impact (FB)</a></li>
+        <li><a href="tel:+91 8388910166" class="custom-icon-link"><i class="fa fa-whatsapp whatsapp-icon icon-pad"></i>
+            WhatsApp: +91 8388910166</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100093609093749" class="custom-icon-link-fb"><i
+              class="fa fa-facebook facebook-icon icon-pad"></i>Facebook: Learn2Impact</a></li>
       </ul>
     </div>
   </section>
@@ -95,18 +134,17 @@
     <h2>Gallery</h2>
     <div class="owl-carousel">
       <div class="gallery-item">
-        <img src="images/gallery/courses.png" alt="Course 1">
-        <h3>Courses</h3>
+        <img src="images/gallery/career-image.png" alt="Our services">
       </div>
       <div class="gallery-item">
-        <img src="images/gallery/class-rules.png" alt="Course 2">
-        <h3>Class rules</h3>
+        <img src="images/gallery/request-demo.png" alt="Request a demo">
       </div>
       <div class="gallery-item">
-        <img src="images/gallery/career-image.png" alt="Course 2">
-        <h3>Our services</h3>
+        <img src="images/gallery/class-rules.png" alt="Class rules">
       </div>
-      <!-- Add more carousel items here -->
+      <div class="gallery-item">
+        <img src="images/gallery/courses.png" alt="Courses">
+      </div>
     </div>
   </section>
 

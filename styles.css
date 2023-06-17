@@ -1,15 +1,26 @@
 /* Reset some default styles */
-body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -43,7 +54,8 @@ header {
 }
 
 .logo img {
-  height: 50px; /* Adjust the height as needed */
+  height: 50px;
+  /* Adjust the height as needed */
   margin-right: 10px;
 }
 
@@ -80,36 +92,45 @@ header {
 
 /* Hero Section Styles */
 .hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  color: #fff;
-  padding: 100px 20px;
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff6b6b;
+  color: #ffffff;
+}
+
+.hero-content {
   text-align: center;
 }
 
-.hero-section h2 {
+.hero-content h1 {
   font-size: 36px;
   margin-bottom: 20px;
 }
 
-.hero-section p {
+.hero-content p {
   font-size: 18px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .cta-btn {
-  background-color: #fff;
-  color: #007bff;
-  padding: 10px 20px;
-  border: none;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  color: #ff6b6b;
+  text-decoration: none;
   border-radius: 4px;
   font-size: 18px;
-  text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .cta-btn:hover {
-  background-color: #e6e6e6;
+  background-color: #ff9f9d;
+  color: #ffffff;
 }
+
 
 /* Courses Section Styles */
 #courses {
@@ -130,7 +151,7 @@ header {
 }
 
 .course {
-  background-color: #fff;
+  background: linear-gradient(135deg, #f9d4e8, #c8cde7);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 20px;
@@ -143,12 +164,14 @@ header {
 
 .course h3 {
   font-size: 20px;
+  font-weight: bold;
   margin-bottom: 10px;
+  color: #333333;
 }
 
 .course p {
   font-size: 14px;
-  color: #666;
+  color: #333333;
   margin-bottom: 5px;
 }
 
@@ -242,6 +265,7 @@ header {
   color: #666;
   margin-bottom: 20px;
 }
+
 /* contact us Styles */
 
 /* ... */
@@ -262,23 +286,84 @@ header {
   margin-bottom: 10px;
 }
 
-#contact ul {
-  list-style: none;
-  margin-top: 20px;
+#contact .contact-links a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-#contact li {
-  margin-bottom: 5px;
+#contact .contact-links a:hover {
+  color: #007bff;
+  /* Change to your desired hover color */
 }
 
-#contact a {
-  color: #333;
+#contact .contact-links a::before {
+  content: "\f232";
+  font-family: "Font Awesome 5 Brands";
+  /* Assuming you're using Font Awesome */
+  margin-right: 5px;
+}
+
+#contact .contact-links a.whatsapp::before {
+  content: "\f232";
+}
+
+#contact .contact-links a.facebook::before {
+  content: "\f09a";
+}
+
+.icon-pad {
+  padding-right: 5px;
+}
+
+.custom-icon-link {
+  display: inline-flex;
+  align-items: center;
+  color: #198c65;
+  /* Icon and text color */
   text-decoration: none;
 }
 
-#contact a:hover {
-  color: #666;
+.custom-icon-link-fb {
+  display: inline-flex;
+  align-items: center;
+  color: #3c5ec5;
+  /* Icon and text color */
+  text-decoration: none;
 }
+
+.custom-icon-whatsapp,
+.custom-icon-facebook {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.custom-icon-whatsapp {
+  background-color: #25D366;
+  /* WhatsApp icon color */
+}
+
+.custom-icon-facebook {
+  background-color: #3b5998;
+  /* Facebook icon color */
+  border-radius: 50%;
+}
+
+.custom-icon-whatsapp:before,
+.custom-icon-facebook:before {
+  content: "";
+}
+
+.custom-icon-link:hover .custom-icon-whatsapp,
+.custom-icon-link:hover .custom-icon-facebook {
+  opacity: 0.8;
+  /* Reduce opacity on hover */
+}
+
 
 
 /* Gallery Section Styles */
@@ -328,4 +413,75 @@ footer {
   }
 }
 
-/* ... */
+/* discount section style */
+/* Opening Discount Section Styles */
+#opening-discount {
+  background-color: #f9d4e8;
+  padding: 40px;
+  text-align: center;
+}
+
+.discount-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.discount-content h2 {
+  font-size: 32px;
+  color: #c0392b;
+}
+
+.discount-content p {
+  font-size: 18px;
+  color: #333;
+}
+
+.discount-content .cta-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #c0392b;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.discount-content .cta-btn:hover {
+  background-color: #a93226;
+}
+
+/* Referral Program Section Styles */
+#referral-program {
+  background-color: #c8cde7;
+  padding: 40px;
+  text-align: center;
+}
+
+.referral-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.referral-content h2 {
+  font-size: 32px;
+  color: #2980b9;
+}
+
+.referral-content p {
+  font-size: 18px;
+  color: #333;
+}
+
+.referral-content .cta-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #2980b9;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.referral-content .cta-btn:hover {
+  background-color: #21618c;
+}

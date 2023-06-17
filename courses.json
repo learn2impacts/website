@@ -1,0 +1,106 @@
+[
+  {
+    "courseId": "C1",
+    "courseName": "Computer Basic",
+    "courseDescription": "Computer overview, words, paint",
+    "totalCourseHours": 20,
+    "courseTimeline": "2 Months",
+    "prerequisite": "For absolute beginners"
+  },
+  {
+    "courseId": "C2",
+    "courseName": "MS Office",
+    "courseDescription": "Word, Excel, PP",
+    "totalCourseHours": 40,
+    "courseTimeline": "3 Months",
+    "prerequisite": "C1"
+  },
+  {
+    "courseId": "C3",
+    "courseName": "JavaScript",
+    "courseDescription": "Make candidate ready for working on JavaScript projects",
+    "totalCourseHours": 30,
+    "courseTimeline": "2 Months",
+    "prerequisite": "C1, C2"
+  },
+  {
+    "courseId": "C4",
+    "courseName": "Angular",
+    "courseDescription": "Make candidate ready for working on Angular projects",
+    "totalCourseHours": 50,
+    "courseTimeline": "5 Months",
+    "prerequisite": "C1, C2, C3"
+  },
+  {
+    "courseId": "C5",
+    "courseName": "NodeJs",
+    "courseDescription": "Make candidate ready for working on NodeJs projects",
+    "totalCourseHours": 50,
+    "courseTimeline": "5 Months",
+    "prerequisite": "C1, C2, C3"
+  },
+  {
+    "courseId": "C6",
+    "courseName": "Web Development",
+    "courseDescription": "Make candidate ready for working on Web projects",
+    "totalCourseHours": 50,
+    "courseTimeline": "5 Months",
+    "prerequisite": "C1, C2, C3"
+  },
+  {
+    "courseId": "C7",
+    "courseName": "Java",
+    "courseDescription": "Make candidate ready for working on Java projects",
+    "totalCourseHours": 60,
+    "courseTimeline": "5 Months",
+    "prerequisite": "C1, C2"
+  },
+  {
+    "courseId": "C8",
+    "courseName": "Database",
+    "courseDescription": "Make candidate ready for working on Database",
+    "totalCourseHours": 40,
+    "courseTimeline": "3 Months",
+    "prerequisite": "C1, C2"
+  },
+  {
+    "courseId": "C9",
+    "courseName": "IT Industrial Training",
+    "courseDescription": "IT freshers industrial project including GIT",
+    "totalCourseHours": 50,
+    "courseTimeline": "5 Months",
+    "prerequisite": "IT Freshers"
+  },
+  {
+    "courseId": "C10",
+    "courseName": "IT Fresher's Interview Preparation",
+    "courseDescription": "It will be a course that includes algorithms, flowchart, one computer language, database, GIT, industrial project, CV development, Job search instructions",
+    "totalCourseHours": 80,
+    "courseTimeline": "6 Months",
+    "prerequisite": "IT Freshers"
+  },
+  {
+    "courseId": "C11",
+    "courseName": "MEAN Stack",
+    "courseDescription": "Make candidate ready for MEAN stack project",
+    "totalCourseHours": 60,
+    "courseTimeline": "5 Months",
+    "prerequisite": "At least knowledge of one server-side programming language"
+  },
+  {
+    "courseId": "C12",
+    "courseName": "AI Basics",
+    "courseDescription": "Concept of AI, how to make use of it in your project",
+    "totalCourseHours": 20,
+    "courseTimeline": "2 Months",
+    "prerequisite": "At least knowledge of one server-side programming language"
+  },
+  {
+    "courseId": "C13",
+    "courseName": "Need based Course",
+    "courseDescription": "Course agenda will be customizable based on candidates' needs",
+    "totalCourseHours": "Decided based on need",
+    "courseTimeline": "Decided based on need",
+    "prerequisite": "Depends on the need"
+  }
+]
