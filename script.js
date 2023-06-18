@@ -1,6 +1,26 @@
+//Go to top
+window.addEventListener('scroll', function() {
+  var goToTopBtn = document.getElementById('goToTop');
+  if (window.scrollY > 500) {
+    goToTopBtn.classList.add('show');
+  } else {
+    goToTopBtn.classList.remove('show');
+  }
+});
+
+document.getElementById('goToTop').addEventListener('click', function(e) {
+  e.preventDefault();
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > 0) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+});
+
+
 // Carousel
 
 $(document).ready(function () {
+  document.getElementById('contact-succ').style.display = 'none';
   $(".owl-carousel").owlCarousel({
     items: 3,
     loop: true,
@@ -71,3 +91,36 @@ document.querySelector("#show-more-btn").addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
   addCourseCards();
 });
+
+
+// Contact form submit
+document.getElementById('contactForm').addEventListener('submit', submitForm);
+
+function submitForm(event) {
+  event.preventDefault();
+  
+  const form = event.target;
+  const formData = new FormData(form);
+  
+  fetch(form.action, {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json'
+    },
+    body: formData
+  })
+  .then(response => {
+    if (response.ok) {
+      // Form submission successful, show success message or redirect
+      form.reset();
+      document.getElementById('contact-succ').style.display = 'block';
+    } else {
+      // Form submission failed, show error message
+      document.getElementById('contact-succ').style.display = 'none';
+    }
+  })
+  .catch(error => {
+    // Fetch request failed, show error message
+    document.getElementById('contact-succ').style.display = 'none';
+  });
+}

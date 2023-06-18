@@ -23,6 +23,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -42,7 +43,7 @@
         <a href="#courses">Courses</a>
         <a href="#about">About Us</a>
         <a href="#career">Career Support</a>
-        <a href="#contact">Contact</a>
+        <a href="#l2i_contact">Contact</a>
         <a href="#gallery">Gallery</a>
       </div>
     </nav>
@@ -72,7 +73,7 @@
     <div class="discount-content">
       <h2>Limited Time Offer!</h2>
       <p>Get 15% Off on All Courses</p>
-      <a href="#contact" class="cta-btn">Contact Now</a>
+      <a href="#l2i_contact" class="cta-btn">Contact Now</a>
     </div>
   </section>
 
@@ -81,7 +82,7 @@
     <div class="referral-content">
       <h2>Refer and Earn</h2>
       <p>Refer a friend or colleague and get additional discounts on your course fees.</p>
-      <a href="#contact" class="cta-btn">Contact Now</a>
+      <a href="#l2i_contact" class="cta-btn">Contact Now</a>
     </div>
   </section>
 
@@ -114,20 +115,29 @@
     </div>
   </section>
 
-  <section id="contact">
-    <div class="contact-content">
+  <section id="l2i_contact">
+    <div class="l2i_contact-content">
       <h2>Contact Us</h2>
       <p>We are providing personal and industrial training. Individuals, colleges, and companies can contact us to
         arrange online industrial training for their students/employees.</p>
       <p>For any inquiries, you can reach us through:</p>
-      <ul>
+      <ul class="pad-bottom">
         <li><a href="tel:+91 8388910166" class="custom-icon-link"><i class="fa fa-whatsapp whatsapp-icon icon-pad"></i>
             WhatsApp: +91 8388910166</a></li>
         <li><a href="https://www.facebook.com/profile.php?id=100093609093749" class="custom-icon-link-fb"><i
               class="fa fa-facebook facebook-icon icon-pad"></i>Facebook: Learn2Impact</a></li>
       </ul>
+      
+      <span id="contact-succ">Thanks for contacting us.</span>
+      <form id="contactForm" action="https://formspree.io/f/mlekqora" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      
     </div>
-  </section>
+  </section>   
 
   <!-- Gallery Section -->
   <section id="gallery">
@@ -153,7 +163,7 @@
   <footer>
     <p>&copy; 2023 Learn2Impacts Academy. All rights reserved.</p>
   </footer>
-
+  <a href="#" id="goToTop" class="go-to-top"><i class="fas fa-arrow-up"></i></a>
   <script src="script.js"></script>
 </body>
 

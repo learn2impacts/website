@@ -364,6 +364,10 @@ header {
   /* Reduce opacity on hover */
 }
 
+#contact-succ {
+  color:rgb(53, 100, 0);
+  padding-top: 15px;
+}
 
 
 /* Gallery Section Styles */
@@ -371,7 +375,10 @@ header {
   padding: 40px 0;
   text-align: center;
 }
-
+#gallery h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 .gallery-img {
   display: inline-block;
   margin: 10px;
@@ -484,4 +491,88 @@ footer {
 
 .referral-content .cta-btn:hover {
   background-color: #21618c;
+}
+
+/* Contact Us form */
+
+#l2i_contact {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+}
+
+.l2i_contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.l2i_contact-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.l2i_contact-content p {
+  margin-bottom: 30px;
+}
+
+#contactForm {
+  padding-top: 20px;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#contactForm button {
+  padding: 10px 20px;
+  background-color: #ff5a5f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#contactForm button:hover {
+  background-color: #e04146;
+}
+
+
+/* Go to top Style */
+.go-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  z-index: 99;
+  transition: opacity 0.3s;
+}
+
+.go-to-top i {
+  font-size: 20px;
+}
+
+.go-to-top.show {
+  display: block;
+}
+
+.go-to-top.fade-in {
+  animation: fade-in 0.3s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
