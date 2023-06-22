@@ -1,5 +1,5 @@
 //Go to top
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   var goToTopBtn = document.getElementById('goToTop');
   if (window.scrollY > 500) {
     goToTopBtn.classList.add('show');
@@ -8,7 +8,7 @@ window.addEventListener('scroll', function() {
   }
 });
 
-document.getElementById('goToTop').addEventListener('click', function(e) {
+document.getElementById('goToTop').addEventListener('click', function (e) {
   e.preventDefault();
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   if (scrollTop > 0) {
@@ -20,6 +20,7 @@ document.getElementById('goToTop').addEventListener('click', function(e) {
 // Carousel
 
 $(document).ready(function () {
+
   document.getElementById('contact-succ').style.display = 'none';
   $(".owl-carousel").owlCarousel({
     items: 3,
@@ -43,14 +44,30 @@ $(document).ready(function () {
 
 // Function to create course cards
 function createCourseCard(course) {
-  const courseCard = document.createElement("div");
-  courseCard.classList.add("course");
-  courseCard.innerHTML = `
-    <h3>${course.courseName}</h3>
-    <p>${course.courseDescription}</p>
-    <p>Total Hours: ${course.totalCourseHours}</p>
-    <p>Timeline: ${course.courseTimeline}</p>
-  `;
+  const courseCard = document.createElement('div');
+  courseCard.classList.add('course-card');
+
+  const courseIdTag = document.createElement('div');
+  courseIdTag.classList.add('course-id');
+  courseIdTag.textContent = course.courseId;
+  courseCard.appendChild(courseIdTag);
+
+  const courseName = document.createElement('h3');
+  courseName.textContent = course.courseName;
+  courseCard.appendChild(courseName);
+
+  const courseDescription = document.createElement('p');
+  courseDescription.textContent = course.courseDescription;
+  courseCard.appendChild(courseDescription);
+
+  const courseHours = document.createElement('p');
+  courseHours.textContent = `${course.totalCourseHours} Hours `;
+  courseCard.appendChild(courseHours);
+
+  const courseTimeline = document.createElement('p');
+  courseTimeline.textContent = course.courseTimeline;
+  courseCard.appendChild(courseTimeline);
+
   return courseCard;
 }
 
@@ -98,10 +115,10 @@ document.getElementById('contactForm').addEventListener('submit', submitForm);
 
 function submitForm(event) {
   event.preventDefault();
-  
+
   const form = event.target;
   const formData = new FormData(form);
-  
+
   fetch(form.action, {
     method: 'POST',
     headers: {
@@ -109,18 +126,18 @@ function submitForm(event) {
     },
     body: formData
   })
-  .then(response => {
-    if (response.ok) {
-      // Form submission successful, show success message or redirect
-      form.reset();
-      document.getElementById('contact-succ').style.display = 'block';
-    } else {
-      // Form submission failed, show error message
+    .then(response => {
+      if (response.ok) {
+        // Form submission successful, show success message or redirect
+        form.reset();
+        document.getElementById('contact-succ').style.display = 'block';
+      } else {
+        // Form submission failed, show error message
+        document.getElementById('contact-succ').style.display = 'none';
+      }
+    })
+    .catch(error => {
+      // Fetch request failed, show error message
       document.getElementById('contact-succ').style.display = 'none';
-    }
-  })
-  .catch(error => {
-    // Fetch request failed, show error message
-    document.getElementById('contact-succ').style.display = 'none';
-  });
+    });
 }
