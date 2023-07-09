@@ -36,9 +36,10 @@ ol {
 
 /* Header Styles */
 header {
-  background-color: #f4f4f4;
-  padding: 20px;
+  background-color: #fff;
+  padding: 10px 20px;
   color: #333;
+  font-size: 15px;
 }
 
 .navbar {
@@ -66,10 +67,19 @@ header {
 }
 
 .navbar-menu a {
-  color: #6192b3;
+  color: #0e0b2a;
   text-decoration: none;
   padding: 10px 15px;
   transition: all 0.3s ease;
+}
+
+.navbar-menu .contact {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px !important;
+  transition: all 0.3s ease;
+  background-color: #488ad1;
+  border-radius: 6px;
 }
 
 .navbar-menu a:hover {
@@ -104,46 +114,92 @@ header {
   }
 }
 
-/* Hero Section Styles */
+/* Hero section - Interview assistant demo */
 .hero-section {
-  position: relative;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ff6b6b;
-  color: #ffffff;
+  padding-left: 20px;
+  background-color: #0e0b2a;
 }
 
 .hero-content {
-  text-align: center;
+  background-color: #0e0b2a;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  color: #fff;
 }
 
-.hero-content h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
+.hero-text h2 {
+  font-size: 40px;
+  max-width: 400px;
+  font-weight: bold;
+  color: #fff;
 }
 
-.hero-content p {
-  font-size: 18px;
-  margin-bottom: 20px;
+.hero-text p {
+  margin-top: 25px;
+  font-size: 15px;
+  color: #fff;
 }
 
-.cta-btn {
+.hero-text .cta-btn {
   display: inline-block;
-  padding: 12px 24px;
-  background-color: #ffffff;
-  color: #ff6b6b;
+  padding: 10px 20px;
+  background-color: #3333ba;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
   text-decoration: none;
   border-radius: 4px;
-  font-size: 18px;
-  transition: background-color 0.3s ease;
+  margin-top: 25px;
 }
 
-.cta-btn:hover {
-  background-color: #ff9f9d;
-  color: #ffffff;
+.hero-text .video-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid #d87676;
+  border-radius: 4px;
+  margin-top: 25px;
+  margin-left: 5px;
 }
+
+.hero-image {
+  margin-top: 20px;
+  background-color: #0e0b2a;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+  }
+
+  .hero-content {
+    flex-basis: 50%;
+  }
+
+  .hero-image {
+    flex-basis: 50%;
+    text-align: right;
+  }
+}
+
+/* end - hero section interview assistant demo */
 
 
 /* Courses Section Styles */
@@ -485,6 +541,7 @@ footer {
   font-size: 18px;
   text-decoration: none;
   margin-top: 20px;
+  border-radius: 6px;
 }
 
 .discount-content .cta-btn:hover {
@@ -521,6 +578,7 @@ footer {
   font-size: 18px;
   text-decoration: none;
   margin-top: 20px;
+  border-radius: 6px;
 }
 
 .referral-content .cta-btn:hover {
@@ -613,8 +671,7 @@ footer {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #333;
-  color: #fff;
+  background-color: #d78e40;
   text-align: center;
   line-height: 40px;
   z-index: 99;
